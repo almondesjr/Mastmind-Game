@@ -1,0 +1,47 @@
+Agesandro Almondes 
+CS 5001 2023
+Final Project Text about project 
+
+This project was an absolute rollercoaster, Started off by drawing everything first, 
+which was the wrong apporach completely, thankfully not all that work was wasted. I met with 
+Louis Sorinti and he helped me process and understand the question cleary. His advice truly 
+contributed to a great deal to my sucess. He helped me think of the problem in a differnt way.
+Now that's out the way lets talk about my program. 
+
+This is a simple version of the Mastermind Game. I have a seperate class callled GameBoard, which 
+essisentially lays the ground work for the game layout--Leaderboard boader, choice boader, blank 
+indicators etc-- and the seperate class called ColorGameGuess. I labeled it ColorGameGuess because
+I've never played or was exposed to Mastermind, so ColorGameGuess just made more sense to me. In 
+ColorGameGuess is where the brains of the opperation lie. From logic on checking position, creating
+a random patttern, updating indicators, registering gif adn placing them, action on click in certain 
+areas buttons(Color Indicators,quit, messaages, backspcae x button, check button). 
+
+Here's a brief overview of ColorGameGuess Aka Mastermind class and how each function works.
+The ColorGuessGame class, is a extension of the GameBoard class. This is the back boen of the core 
+gameplay mechanics the Mastermind game. Upon initialization, this class sets up a Turtle screen and 
+configures various game elements, including color options, positions for game pieces, and tracking and 
+indicator positions. The get_random method generates a random pattern for players 
+to guess(it's never the same twice in a row). The various buttons (like quit, check, and remove buttons) 
+are placed simialr to demostration and funciton the same. Confiming gueess, erases previous selcetion. These 
+"events" happpen to the on_click methods, which are responsible for handling what happens(pop a messaages), 
+end the game, erase previous guess, sumbit guess etc. This class is also responsible for drawing and updating
+the visual components of game such as the colored circles--that go empty upon slecting one and come back 
+after pressing the backspace button-- choice trackers--tracking user's color selcetion-- and indicators
+which lets the player know if; the color is in the correct location, color is in wrong position but in 
+pattern, or simpliy not in pattern at all. Check_guess essisentially compares all the user choices, and 
+calls the methods mentioned before to color specific reqirements. 
+
+How could it be improved? I think my ColorGameGuess class is messy and could use alot of refractoring. 
+Partically in spliting the class up into multiple seperate classes in different files. However every time
+I try to do this, my main becomes 20+ lines long. However if I keep everything in one classs 
+I dont come across this problem. This is defitnetly something i will continue to work on. 
+My test function aren't the best because im not testing user input, rather logic. If i knew how to do so 
+i think this would provide a more concrete Unit Test. I think if someone where to read my code 
+i think they would understand the "spegetti" especailly with my #comments. 
+
+I think the biggest issues I faced in this project was trying to perfecly replicate the project 
+just like you programed it Professor K. Once I stopped that and attempted to make it the bets 
+version i could. I began to make progress, a few things that had me stuck for a couple days.
+Issues-- how to seperate class(i think I did a poor job at this), Resting color picker for each 
+new guess, updating indicators(positioning-accoring to in but wrong pos, or correct pos). The 
+Unit testing for this absolutly killed me, and thus i belive it's terrible. 

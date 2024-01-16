@@ -1,0 +1,12 @@
+Agesandro Almondes
+CS 5001 Final Project
+Error Texts
+
+MAIN Issues:
+
+If you click on the cirles choices to fast multiple lines are drawn, i tried to midigate this
+by doing limiting to first 4 clicks however this still hasen't changed anything. File Error, 
+works if there is no leaderbooard file, however other file errro dosen't come up. Im uncertain when 
+that should come up. due to crunch time im not implimenting it. 
+
+Game Loads with empty leaderboard file, so a fresh game!

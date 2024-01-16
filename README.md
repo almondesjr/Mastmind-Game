@@ -1,1 +1,3 @@
 # Mastmind-Game
+
+This project is a simplified version of the famous Mastermind game, implemented using Python. It incorporates classes to store various elements such as marbles, a color tracker, and a dynamic leaderboard file that updates after each score. Each marble in the game is interactive, tracking the user's selected choices upon clicks. Notably, this game is developed with Python's Turtle graphics library, adding a unique visual dimension. The absence of Python's Tkinter library in this project presented an additional level of challenge. Designed as my final project for a Python course, this game ensures that no marble pattern ever repeats, offering a new experience in each session.
